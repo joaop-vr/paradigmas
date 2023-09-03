@@ -1,7 +1,7 @@
 # paradigmas
 
 Autor: Joao Pedro Vicente Ramalho.
-Estudante da Universidade Federal do Paraná.
+Estudante de Ciência da Computação na Universidade Federal do Paraná.
 
 Exercícios de treino referente à disciplina de Paradigmas da Computação.
 
