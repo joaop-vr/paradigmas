@@ -52,4 +52,8 @@ class Funcionario {
 
     }
 
+    public float calcularSalarioFinal() {
+        return 0;
+    }
+
 }
