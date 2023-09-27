@@ -1,8 +1,10 @@
 public class contaPoupanca extends contaBancaria {
+
     private int diaDoRendimento;
 
     // Construtor padrão
-    public contaPoupanca() {}
+    public contaPoupanca() {
+    }
 
     // Construtor completo
     public contaPoupanca(String nome, int numConta, float saldo, int dia) {
@@ -23,7 +25,8 @@ public class contaPoupanca extends contaBancaria {
     }
 
     public void calcularNovoSaldo(float taxa) {
-        float novoSaldo = getSaldo() + getSaldo()*(taxa / 100); // Calcula o novo saldo com base na taxa de juros em porcentagem
+        float novoSaldo = getSaldo() + getSaldo() * (taxa / 100); // Calcula o novo saldo com base na taxa de juros em
+                                                                  // porcentagem
         setsaldo(novoSaldo);
     }
 }
