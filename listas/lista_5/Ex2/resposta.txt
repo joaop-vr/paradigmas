@@ -1,0 +1,8 @@
+"ArrayList<Imovel> imoveis = new ArrayList<Imovel>();" -> poliformismo de inclusão, coerção do tipo upcast e paramétrica
+
+    - inclusão: o objeto imoveis é capaz de guardar outros objetos de diferentes classes;
+    
+    - coerção do tipo upcast: ao adicionar os objetos à coleção estamos inflingindo uma mudança 
+    de tipos de objetos, indo do mais específico (ImovelNovo, ImovelVelho) para o mais genérico (Imovel);
+
+    - paramétrica: possibilita um objeto lidar com diferentes tipos de objetos sem a necessidade de utilizar o casting;
