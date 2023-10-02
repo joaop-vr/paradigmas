@@ -1,20 +1,20 @@
-class Horista extends Funcionario {
+class funcionarioHorista extends Funcionario {
 
     private int valorHora;
     private int numHoras;
 
     // Construtor padrão 
-    public Horista() {}
+    public funcionarioHorista() {}
 
     // Construtor completo
-    public Horista(String nome, int matricula, int dia, int mes, int ano, boolean estrangeiro, int valorHora, int numHoras) {
+    public funcionarioHorista(String nome, int matricula, int dia, int mes, int ano, boolean estrangeiro, int valorHora, int numHoras) {
         super(nome, matricula, dia, mes, ano, estrangeiro);
         this.setValorHora(valorHora);
         this.setNumHoras(numHoras);
     }
 
     // Construtor apenas com valorHora e numHoras
-    public Horista(int valorHora, int numHoras) {
+    public funcionarioHorista(int valorHora, int numHoras) {
         this(null, 0, 0, 0, 0, false, valorHora, numHoras);
     }
 
@@ -45,6 +45,12 @@ class Horista extends Funcionario {
             aux + 
             "Valor por hora: " + getValorHora() + "\n" +
             "Horas trabalhadas: " + getNumHoras() + "\n";
+    }
 
+    public float calcularSalarioFinal() {
+        int a,b;
+        a = getValorHora();
+        b = getNumHoras();
+        return (a*b);
     }
 }
