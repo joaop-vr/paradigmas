@@ -26,5 +26,28 @@ public class Principal {
             System.out.println("Matrícula: " + prof.getMatricula());
             System.out.println();
         }
+
+        int matriculaParaBuscar = 20234019;
+        Professor professorParaRemover = null;
+
+        for (Professor prof : docentes) {
+            if (prof.getMatricula() == matriculaParaBuscar) {
+                professorParaRemover = prof;
+                break;
+            }
+        }
+
+        if (professorParaRemover != null) {
+            docentes.remove(professorParaRemover);
+            System.out.println("Professor removido com sucesso!");
+        } else {
+            System.out.println("Professor com a matrícula " + matriculaParaBuscar + " não encontrado.");
+        }
+
+        for (Professor prof : docentes) {
+            System.out.println("Nome: " + prof.getNome());
+            System.out.println("Matrícula: " + prof.getMatricula());
+            System.out.println();
+        }
     }
 }
