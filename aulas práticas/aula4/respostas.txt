@@ -1,0 +1,6 @@
+2.
+a) Não, a aplicação que cria a coleção de objetos não vai continuar funcionando
+após a modificação na estrutura das classes - porque a classe ProdutoEletronico passou
+a ser uma classe abstratas e elas não devem ser instanceadas.
+
+
