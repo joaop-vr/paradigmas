@@ -1,8 +1,8 @@
 public abstract class ProdutoEletronico implements Loja {
 
-    private String nomeFabricante;
-    private float peso;
-    private String marca;
+    protected String nomeFabricante;
+    protected float peso;
+    protected String marca;
 
     public ProdutoEletronico() {}
 
@@ -42,12 +42,27 @@ public abstract class ProdutoEletronico implements Loja {
         return this.marca;
     }
 
-    public void vender() {
-        System.out.print("Vendendo um serviço!\n");
+    public void ligar() {
+        if (this instanceof Celular) {
+            System.out.printf("Ligando o celular " + this.getNomeFabricante() + "!\n");
+        }
+        else if (this instanceof Televisao) {
+            System.out.printf("Ligando a televisão " + this.getNomeFabricante() + "!\n");
+        }
+        else {
+            System.out.println("Dispositivo não suportado.");
+        }
     }
 
-    public void acionarGarantia() {
-        System.out.print("Acionando a garantia!\n");
+    public void desligar() {
+        if (this instanceof Celular) {
+            System.out.printf("Desligando o celular " + this.getNomeFabricante() + "!\n");
+        }
+        else if (this instanceof Televisao) {
+            System.out.printf("Desligando a televisão " + this.getNomeFabricante() + "!\n");
+        }
+        else {
+            System.out.println("Dispositivo não suportado.");
+        }
     }
-
 }
