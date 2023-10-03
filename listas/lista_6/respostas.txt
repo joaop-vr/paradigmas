@@ -1,0 +1,4 @@
+1.
+a) padrão Observer (comportamental)
+b) padrão Factory Method (criação)
+c) padrão Adapter (estrutural)
