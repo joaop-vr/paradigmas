@@ -17,3 +17,12 @@ somaPMultN (cabeca:cauda)
     | otherwise = (cabeca + soma, mul)
     where
         (soma, mul) = somaPMultN cauda
+
+type Nome = String
+type Nota = Int
+type Tipo = String
+type Ponto = (Nome, Nota, Tipo)
+
+pontosTuristicos :: Int -> [Ponto] -> [Ponto]
+pontosTuristicos notaPonto pontos = [p | p@(nome, nota, tipo) <- pontos, nota >= notaPonto && (tipo == "parque" || tipo == "museu")]
+
